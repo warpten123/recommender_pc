@@ -1,0 +1,326 @@
+/* General Container Styling */
+.recommendationSection {
+  padding: 4rem 2rem;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #264653;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 320px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cardTitle {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.price {
+  font-weight: bold;
+  color: #264653;
+  margin-bottom: 1rem;
+}
+
+.specList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  width: 100%;
+  text-align: left;
+}
+
+.specList li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.specKey {
+  font-weight: 600;
+  color: #444;
+}
+
+.specValue {
+  color: #666;
+}
+
+.similarityBar {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.similarityFill {
+  height: 100%;
+  background-color: #6a7ba2;
+  transition: width 0.3s ease;
+}
+
+.similarityText {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.againButton {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #264653;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.againButton:hover {
+  background-color: #1f3b47;
+}
+
+.recommendContainer {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+.recommendTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #264653;
+}
+
+.cardsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #f5f9ff;
+  border: 1px solid #d3e3fc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #264653;
+}
+
+.cardPrice {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2a9d8f;
+}
+
+.specList {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.specList li {
+  margin-bottom: 0.5rem;
+}
+
+.againButton {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #264653;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.againButton:hover {
+  background-color: #1f3b47;
+}
+
+/* User Preferences */
+.userPrefs {
+  margin-bottom: 2rem;
+  color: #4f4f4f;
+  font-size: 1.1rem;
+  font-style: italic;
+  background-color: #f0f7f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+.userPrefs h3 {
+  font-size: 1.4rem;
+  color: #264653;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.userPrefs ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.userPrefs li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.userPrefs li strong {
+  font-weight: 600;
+  color: #264653;
+}
+
+.userPrefs li span {
+  color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .recommendationSection {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .cardsWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1.2rem;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardPrice {
+    font-size: 1rem;
+  }
+
+  .userPrefs {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .userPrefs h3 {
+    font-size: 1.2rem;
+  }
+
+  .userPrefs li {
+    font-size: 0.95rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .userPrefs li strong {
+    margin-bottom: 0.5rem;
+  }
+
+  .againButton {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .recommendationSection {
+    padding: 1.5rem 1rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .cardContainer {
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+  }
+
+  .cardPrice {
+    font-size: 0.95rem;
+  }
+
+  .userPrefs {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .userPrefs h3 {
+    font-size: 1.1rem;
+  }
+
+  .userPrefs li {
+    font-size: 0.9rem;
+  }
+
+  .againButton {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+}
