@@ -232,7 +232,7 @@ export default function Hero() {
                           setPayloadMatrix([]);
                         }}
                       >
-                        🔄 Retake Quiz
+                        🔄 Do It Again
                       </button>
                       <button
                         className={styles.recommendButton}
