@@ -35,7 +35,7 @@ export default function PCRecommend({
         {builds.map((build, index) => (
           <div key={index + 1} className={styles.card}>
             <h3 className={styles.cardTitle}>Build #{index + 1}</h3>
-            <p className={styles.cardPrice}> ${build.build_price}</p>
+            <p className={styles.cardPrice}> ₱{build.build_price}</p>
             <ul className={styles.specList}>
               {Object.entries(build.build_specs).map(([part, detail]) => (
                 <li key={part}>
